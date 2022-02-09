@@ -7,7 +7,7 @@ nltk.download('stopwords',quiet=True)
 from nltk.corpus import stopwords
 signes = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
-stop_words = stopwords.words('english') + stopwords.words('spanish') + stopwords.words('catalan')  + stopwords.words('italian') 
+stop_words = stopwords.words('english') + stopwords.words('spanish') + stopwords.words('italian') 
 stop_words = set(stop_words)
 input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='latin1')
 for line in input_stream:
